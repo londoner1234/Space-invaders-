@@ -9,6 +9,7 @@ pygame.init()
 # 800 is the Width, and 600 is the Height.
 screen = pygame.display.set_mode((800, 600))
 
+
 # Title and Icon (32x32)
 pygame.display.set_caption("Space Invaders!")
 icon = pygame.image.load('rocket.png')
