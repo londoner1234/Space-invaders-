@@ -5,6 +5,8 @@ import random
 
 pygame.init()
 
+
+
 # Create the screen / surface and its dimensions
 # 800 is the Width, and 600 is the Height.
 screen = pygame.display.set_mode((800, 600))
