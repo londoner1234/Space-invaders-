@@ -135,8 +135,12 @@ while running:
             Bullet_State = "Ready"
             score += 1
             print(score)
-            EnemyX = random.randint(0, 735)
-            EnemyY = random.randint(50, 150)
+            EnemyX.append(random.randint(0, 735)) #add a new one
+            EnemyY.append(random.randint(50, 150))
+            # remove the old enemy
+             EnemyX.remove(EnemyX[i])
+            EnemyY.remove(EnemyY[i])
+
         enemy(EnemyX[i], EnemyY[i], i)
     # Bullet Movement
     if BulletY <= 0:
@@ -149,7 +153,5 @@ while running:
 
 
     player(PlayerX, PlayerY)
-    pygame.display.update()
-# An event is anything that happens inside the game window or screen.
-
+    pygame.display.update() #An event is anything that happens inside the game window or screen.
 print("Hello welcome to the Game")
